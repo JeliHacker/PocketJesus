@@ -14,6 +14,8 @@ with open('quotes_perfect.csv', 'r') as input_file:
         # Create a CSV writer object
         writer = csv.writer(output_file)
 
+        writer.writerow(['Verse'])
+
         # Iterate through the rows
         for row in reader:
 
