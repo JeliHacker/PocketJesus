@@ -25,7 +25,7 @@ with open('verses_numbered.csv', 'r', encoding='utf-8') as input_file:
             if count == 0:
                 print("Do nothing")
 
-            elif 50 <= int(row[0]) <= 100:
+            elif 201 <= int(row[0]) <= 250:
                 verse = row[1].replace(" ", "").lower()
 
                 url = bible_api_url + verse

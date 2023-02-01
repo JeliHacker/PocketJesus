@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-bible_api_url = "https://bible-api.com/genesis3:16"
+bible_api_url = "https://bible-api.com/romans+12:1-2"
 
 jesus_quotes_url = "https://www.eldoradoweather.com/current/jesus-quotes.php"
 
