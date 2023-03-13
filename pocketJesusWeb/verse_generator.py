@@ -10,7 +10,10 @@ params = {
     "translation": "bbe"
 }
 
-url = "https://bible-api.com/matthew3:15"
+url = "https://bible-api.com/1corinthians11:24"
+
+response = requests.get(url = url)
+print(response.text)
 
 with open('verses_numbered.csv', 'r', encoding='utf-8') as input_file:
     # Create a CSV reader object
@@ -25,7 +28,8 @@ with open('verses_numbered.csv', 'r', encoding='utf-8') as input_file:
             if count == 0:
                 print("Do nothing")
 
-            elif 201 <= int(row[0]) <= 250:
+            elif 2001 <= int(row[0]) <= 3000:
+                print(row)
                 verse = row[1].replace(" ", "").lower()
 
                 url = bible_api_url + verse
